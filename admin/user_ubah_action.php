@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 
 $user = $_POST['username'];
 $pass = $_POST['password'];
@@ -21,7 +21,7 @@ if ($hasil) {
 }
 ?>
 <br>
-<a href="halamanuser.php" class="btn btn-primary">Kembali ke halaman user</a>
+<a href="halaman_user.php" class="btn btn-primary">Kembali ke halaman user</a>
 
 <?php
-include "./includes/footer.php";
+include "../includes/footer.php";

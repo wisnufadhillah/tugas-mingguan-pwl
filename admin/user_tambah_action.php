@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 ?>
 
 <div class="container mt-5">
@@ -23,7 +23,7 @@ include "./includes/config.php";
     }
     ?>
     <br>
-    <p class="text-center"><a href="halamanuser.php" class="btn btn-primary">Kembali ke halaman user</a></p>
+    <p class="text-center"><a href="halaman_user.php" class="btn btn-primary">Kembali ke halaman user</a></p>
 </div>
 
-<?php include "./includes/footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 ?>
 
 <div class="container mt-5">
@@ -48,5 +48,5 @@ include "./includes/config.php";
 </div>
 
 <?php
-include "./includes/footer.php";
+include "../includes/footer.php";
 ?>

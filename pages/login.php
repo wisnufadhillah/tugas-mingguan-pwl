@@ -1,7 +1,8 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 ?>
+
 <style>
     .login-page {
         margin: 50px auto;
@@ -25,7 +26,7 @@ include "./includes/config.php";
 
 <div class="login-page">
     <div class="form">
-        <form class="login-form" action="./pages/login_action.php" method="POST">
+        <form class="login-form" action="login_action.php" method="POST">
             <div class="form-group">
                 <label for="txtUsername">Username</label>
                 <input type="text" class="form-control" id="txtUsername" placeholder="Username" name="txtUsername" required>
@@ -38,6 +39,7 @@ include "./includes/config.php";
         </form>
     </div>
 </div>
+
 <?php
-include "./includes/footer.php";
+include "../includes/footer.php";
 ?>

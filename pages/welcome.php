@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 
 if (isset($_SESSION["username"])) {
     echo "<div class='container'>
@@ -28,4 +28,4 @@ login.php'>Login </a> terlebih dahulu.</p>
     </div>";
 }
 
-include "./includes/footer.php";
+include "../includes/footer.php";

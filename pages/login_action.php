@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 
 $username = $_POST['txtUsername'];
 $password = $_POST['txtPassword']; // Missing closing quote
@@ -20,4 +20,4 @@ if (mysqli_num_rows($hasil) > 0) {
     echo "<div class='alert alert-danger' role='alert'>Maaf, username atau password salah. <a href='login.php'>Klik disini</a> untuk kembali login.</div>";
 }
 
-include "./includes/footer.php";
+include "../includes/footer.php";

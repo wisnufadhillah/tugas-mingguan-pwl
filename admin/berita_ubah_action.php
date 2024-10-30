@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 
 $judul = $_POST["judul"];
 $isiberita = $_POST["isi"];
@@ -24,7 +24,7 @@ $uploadfile = $uploaddir . basename($namafile);
         $sql = "INSERT INTO berita (berita_judul, berita_isi, berita_gambar, berita_tanggal, user_nama) 
                 VALUES ('$judul', '$isiberita', '$uploadfile', '$tgl_upload', '$usernama')";
         mysqli_query($config, $sql);
-        header('Location: halamanberita.php');
+        header('Location: halaman_berita.php');
         ?>
     <?php else: ?>
         <div class="alert alert-danger" role="alert">

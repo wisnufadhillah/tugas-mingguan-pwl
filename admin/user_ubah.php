@@ -1,6 +1,6 @@
 <?php
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 
 $user = $_GET['user_nama'];
 $sql = "SELECT * FROM user WHERE user_nama='$user'";
@@ -35,4 +35,4 @@ $data = mysqli_fetch_assoc($hasil);
 </div>
 
 <?php
-include "./includes/footer.php";
+include "../includes/footer.php";

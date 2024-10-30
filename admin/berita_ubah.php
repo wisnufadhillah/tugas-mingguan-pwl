@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./includes/header.php";
-include "./includes/config.php";
+include "../includes/header.php";
+include "../includes/config.php";
 ?>
 <style>
     table {
@@ -69,4 +69,4 @@ include "./includes/config.php";
     </table>
 </form>
 
-<?php include "./includes/footer.php"; ?>
+<?php include "../includes/footer.php"; ?>
