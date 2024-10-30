@@ -1,0 +1,80 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "prettier"],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"trailingComma": "es5",
+				"tabWidth": 4,
+				"printWidth": 80,
+				"htmlWhitespaceSensitivity": "css",
+				"insertPragma": false,
+				"proseWrap": "preserve",
+				"requirePragma": false,
+				"useTabs": true,
+				"singleQuote": true,
+				"vueIndentScriptAndStyle": false,
+				"embeddedLanguageFormatting": "auto",
+				"arrowParens": "avoid"
+			}
+		],
+		"react/jsx-filename-extension": [
+			"warn",
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"jsx-quotes": ["error", "prefer-double"],
+		"quotes": ["error", "single", { "avoidEscape": true }],
+		"php/no-php-short-tags": "error",
+		"html/html-quotes": ["error", "double"]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"overrides": [
+		{
+			"files": ["*.js", "*.jsx"],
+			"rules": {
+				"react/jsx-filename-extension": [
+					"warn",
+					{
+						"extensions": [".js", ".jsx"]
+					}
+				]
+			}
+		}
+	],
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "css", "php"],
+	"eslint.rules.customizations": [
+		{
+			"rule": "prettier/prettier",
+			"severity": "error"
+		},
+		{
+			"rule": "react/jsx-filename-extension",
+			"severity": "warn",
+			"options": [
+				1,
+				{
+					"extensions": [".js", ".jsx"]
+				}
+			]
+		}
+	]
+}
