@@ -5,7 +5,7 @@ include "../includes/config.php";
 ?>
 
 <div class="container mt-5">
-    <p class="text-left">Anda Login Sebagai "<?php echo $_SESSION['username']; ?>" | Klik <a href="../logout.php">disini</a> untuk logout.</p>
+    <p class="text-left">Anda Login Sebagai "<?php echo $_SESSION['username']; ?>" | Klik <a href="../pages/logout.php">disini</a> untuk logout.</p>
     <h3 class="text-center">Data Berita</h3>
     <p class="text-center"><a href="berita_tambah.php" class="btn btn-primary">+ Tambah Berita</a></p>
 

@@ -10,7 +10,7 @@ $usernama = $_POST["user_nama"];
 $lokasifile = $_FILES['gambar']['tmp_name'];
 $namafile = $_FILES['gambar']['name'];
 
-$uploaddir = "uploads/";
+$uploaddir = "./upload/";
 $uploadfile = $uploaddir . $namafile;
 
 if (move_uploaded_file($lokasifile, $uploadfile)) {

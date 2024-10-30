@@ -4,6 +4,10 @@ include "../includes/config.php";
 ?>
 
 <style>
+    .container {
+        width: 600px;
+    }
+
     .login-page {
         margin: 50px auto;
     }
@@ -24,9 +28,10 @@ include "../includes/config.php";
     }
 </style>
 
-<div class="login-page">
+<div class="login-page container">
     <div class="form">
         <form class="login-form" action="login_action.php" method="POST">
+            <h1 class="text-center">Login</h1>
             <div class="form-group">
                 <label for="txtUsername">Username</label>
                 <input type="text" class="form-control" id="txtUsername" placeholder="Username" name="txtUsername" required>

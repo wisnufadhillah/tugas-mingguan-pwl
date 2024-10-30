@@ -1,13 +1,13 @@
 <?php
+session_start();
+
 include "../includes/header.php";
 include "../includes/config.php";
 
-$username = $_POST['txtUsername'];
-$password = $_POST['txtPassword']; // Missing closing quote
+$username = mysqli_real_escape_string($config, $_POST['txtUsername']);
+$password = mysqli_real_escape_string($config, $_POST['txtPassword']);
 
-$sql = "select user_nama from user
-        where user_nama = '$username'
-        and user_password = '$password'";
+$sql = "SELECT user_nama FROM user WHERE user_nama = '$username' AND user_password = '$password'";
 
 $hasil = mysqli_query($config, $sql) or exit("Error query : <b>" . $sql . "</b>.");
 
